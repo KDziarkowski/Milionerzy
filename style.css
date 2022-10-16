@@ -5,10 +5,11 @@ body{
 #container{
 		background-color: #2619DF;
 		width: 1200px;
-		min-height:1000px;
+		min-height:800px;
 		color: white;
 		margin-left: auto;
 		margin-right: auto;
+	font-family: Candara;
 }
 #kwoty{
 	background-color:red;
@@ -16,14 +17,44 @@ body{
 	min-height: 700px;
 	float: left;
 	margin-left:100px;
+	font-size: 38px;
+	color: black;
 	
 }
 #zadanie{
 		background-color:green;
 		width:700px;
-		min-height:200px;
+		min-height:300px;
 		float: left;
-		margin-top:500px;
-		padding-left:50;
+		margin-top:400px;
+		margin-left:50px;
 	
+}
+#kwota1,#kwota2,#kwota3,#kwota4,#kwota5,#kwota6
+,#kwota7,#kwota8,#kwota9,#kwota10,#kwota11,#kwota12{
+	padding: 5px;
+}
+#pytanie{
+	width: 550px;
+	color: black;
+	font-size: 25px;
+	min-height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	background-color: beige;
+	border: 5px solid darkblue;
+	border-radius: 20px;
+}
+
+#odp1, #odp2, #odp3, #odp4{
+	float: left;
+	padding: 15px;
+	width: 250px;
+	min-height: 50px;
+	background-color: crimson;
+	margin-left: 43px;
+	margin-top: 20px;
+	border: 5px solid darkblue;
+	border-radius: 50px;
 }
