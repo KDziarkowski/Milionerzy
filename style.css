@@ -1,7 +1,12 @@
 body{
 	background-color: white;
 	box-sizing: border-box;
-	
+	font-family: Candara;
+}
+#title{
+	background-color: #23395d;
+	font-size: 60px;
+	text-align: center;
 }
 #container{
 	background-color: #23395d;
@@ -10,7 +15,11 @@ body{
 	color: white;
 	margin-left: auto;
 	margin-right: auto;
-	font-family: Candara;
+
+}
+#navi{
+	width: 1200px;
+	color: aliceblue;
 }
 #kwoty{
 	margin-top: 30px;
