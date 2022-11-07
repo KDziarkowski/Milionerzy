@@ -7,11 +7,13 @@ body{
 	background-color: #23395d;
 	font-size: 60px;
 	text-align: center;
+	color: beige;
 }
 #container{
 	background-color: #23395d;
-	width: 1200px;
-	min-height:900px;
+	min-width: 600px;
+	max-width: 1200px;
+	min-height: 1200px;
 	color: white;
 	margin-left: auto;
 	margin-right: auto;
@@ -19,45 +21,46 @@ body{
 }
 #navi{
 	width: 1200px;
-	color: aliceblue;
+	font-size: 25px;
+
 }
 #kwoty{
-	margin-top: 30px;
+	margin-top: 20px;
 	border: 7px solid black;
-	width:300px;
-	min-height: 700px;
+	width: 25%;
+	min-height: 600px;
 	float: left;
-	margin-left:100px;
-	font-size: 38px;
+	margin-left: 4%;
+	font-size: 34px;
 	color: black;
-	
+
 }
 #zadanie{
 	background-color:#274360;
 	border: 7px solid black;
-	width:700px;
+	width: 60%;
 	min-height:300px;
 	float: left;
-	margin-top:420px;
-	margin-left:50px;
-	
+	margin-top: 320px;
+	margin-left: 4%;
+
 }
 #kwota1,#kwota2,#kwota3,#kwota4,#kwota5
 ,#kwota7,#kwota8,#kwota9,#kwota10,#kwota12{
-	padding: 5px;
+	padding: 3px;
 }
 #kwota6,#kwota11{
-	padding: 5px;
+	padding: 3px;
 	color: goldenrod;
- }
+}
 #pytanie{
 	width: 550px;
 	color: black;
 	font-size: 25px;
-	min-height: 100px;
+	min-height: 90px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 	background-color: beige;
 	border: 5px solid darkblue;
 	border-radius: 20px;
@@ -70,7 +73,7 @@ body{
 	min-height: 50px;
 	background-color: crimson;
 	margin-left: 43px;
-	margin-top: 20px;
+	margin-top: 15px;
 	border: 5px solid darkblue;
 	border-radius: 50px;
 }
