@@ -3,9 +3,10 @@ body{
 	box-sizing: border-box;
 	font-family: Candara;
 }
+
 #title{
 	background-color: #23395d;
-	font-size: 60px;
+	font-size: 70px;
 	text-align: center;
 	color: beige;
 }
@@ -19,10 +20,25 @@ body{
 	margin-right: auto;
 
 }
-#navi{
-	width: 1200px;
-	font-size: 25px;
+nav{
+	width: 100%;
+	padding: 20px 0px;
+	text-align: center;
+}
+nav ul{
+	background-color: #ACADA8;
+	width: 97%;
 
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 20px 10%;
+
+}
+nav.sticky{
+	position: fixed;
+	top: 0;
 }
 #kwoty{
 	margin-top: 20px;
@@ -54,7 +70,7 @@ body{
 	color: goldenrod;
 }
 #pytanie{
-	width: 550px;
+	width: 80%;
 	color: black;
 	font-size: 25px;
 	min-height: 90px;
@@ -66,16 +82,36 @@ body{
 	border-radius: 20px;
 }
 
-#odp1, #odp2, #odp3, #odp4{
+.odp{
 	float: left;
-	padding: 15px;
-	width: 250px;
-	min-height: 50px;
+	width: 40%;
+	min-height: 70px;
 	background-color: crimson;
-	margin-left: 43px;
+	margin-left: 5%;
 	margin-top: 15px;
 	border: 5px solid darkblue;
 	border-radius: 50px;
+	filter: brightness(70%);
+	cursor: pointer;
+}
+.odp:hover
+{
+	border: 5px solid #e9b64a;
+	filter: brightness(100%);
+}
+@media all and (max-width:950px) {
+	.odp {
+		float:none;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#zadanie{
+		margin-top: 170px;
+	}
+	#kwoty{
+		font-size: 30px;
+	}
 }
 #kola_ratunkowe{
 	float: left;
