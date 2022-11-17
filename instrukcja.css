@@ -13,6 +13,7 @@ body{
     grid-gap: 1em;
     grid-auto-rows: minmax(80px, auto);
     color: beige;
+
 }
 nav{
     grid-column: 1/3;
@@ -31,9 +32,9 @@ nav ul li{
 
 }
 nav.sticky{
-    position: fixed;
+    position: sticky;
     top: 0;
-    width: 79%;
+    width: 100%;
 }
 .header{
     font-size: 40px;
