@@ -1,0 +1,133 @@
+body{
+	background-color: white;
+	box-sizing: border-box;
+	font-family: Candara;
+}
+
+	#title {
+		background-color: #23395d;
+		font-size: 70px;
+		text-align: center;
+
+	}
+
+	#container {
+		background-color: #23395d;
+		min-width: 600px;
+		max-width: 1200px;
+		min-height: 1200px;
+		color: white;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	#navbar {
+		width: 100%;
+		padding: 5% 0px;
+		text-align: center;
+	}
+
+	#menu {
+		background-color: #ACADA8;
+		width: 97%;
+
+	}
+
+	#menu li {
+		display: inline-block;
+		list-style: none;
+		margin: 20px 10%;
+		color: beige;
+	}
+
+	#navbar.sticky {
+		position: sticky;
+		top: 0;
+		width: 100%;
+	}
+
+	#kwoty {
+		border: 7px solid black;
+		width: 25%;
+		min-height: 600px;
+		float: left;
+		margin-left: 4%;
+		font-size: 34px;
+		color: black;
+
+	}
+
+	#zadanie {
+		background-color: #274360;
+		border: 7px solid black;
+		width: 60%;
+		min-height: 300px;
+		float: left;
+		margin-top: 210px;
+		margin-left: 4%;
+		text-align: center;
+
+
+	}
+
+	#kwota1, #kwota2, #kwota3, #kwota4, #kwota5, #kwota7, #kwota8, #kwota9, #kwota10, #kwota12 {
+		padding: 3px;
+	}
+
+	#kwota6, #kwota11 {
+		padding: 3px;
+		color: goldenrod;
+	}
+
+	#pytanie {
+		width: 80%;
+		color: black;
+		font-size: 25px;
+		min-height: 90px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 8px;
+		background-color: beige;
+		border: 5px solid darkblue;
+		border-radius: 20px;
+	}
+
+	.odp {
+		float: left;
+		width: 40%;
+		min-height: 70px;
+		background-color: crimson;
+		margin-left: 5%;
+		margin-top: 15px;
+		border: 5px solid darkblue;
+		border-radius: 50px;
+		filter: brightness(70%);
+		cursor: pointer;
+		align-items: center;
+		display: flex;
+		justify-content: center;
+	}
+
+	.odp:hover {
+		border: 5px solid #e9b64a;
+		filter: brightness(100%);
+		cursor: pointer;
+	}
+	.btn:hover{
+		cursor: pointer;
+	}
+	#kola_ratunkowe {
+		float: left;
+	}
+@media only screen and (max-width: 850px){
+	.odp{
+		width: 90%;
+	}
+	#kwoty{
+		font-size: 30px;
+	}
+	#zadanie{
+		margin-top: 100px;
+	}
+}

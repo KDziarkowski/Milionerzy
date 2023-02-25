@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <style>
+        html {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+
+}
+
+body {
+    margin: 0;
+    background-color: #23395d;
+}
+
+.rejestracjaBox {
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+  } 
+  .rejestracjaBox form {
+    background-color: white;
+    border-radius: 8px;
+    height: 230px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .rejestracjaBox p {
+    font-size: 35px;
+    text-align: center;
+    color: #1D3557;
+  }
+
+  .form-group {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+  }
+  .form-group label{
+    font-size: 18px;
+    font-weight: bold; 
+  }
+
+  .form-control {
+    background-color: #EDEFF2;
+    height: 30px;
+    width: 90%;
+    border: none;
+    border-radius: 8px;
+  }
+
+  #btn-register {
+    float: right;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    height: 40px;
+  }
+  .response {
+    background-color: white;
+    border-radius: 8px;
+    height: fit-content;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: red;
+    font-size: 15px;
+    text-align: center;
+  }
+  .response-positive {
+    background-color: white;
+    border-radius: 8px;
+    height: fit-content;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: rgb(16, 166, 16);
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .restart {
+    margin-left: 50px;
+    font-size: 16px;
+    text-decoration:underline;
+  }
+  .restart:hover {
+    color:#1085a0;
+  }
+
+  @media only screen and (max-width: 1820px){
+    .rejestracjaBox p {
+      margin-bottom: 5%;
+    }
+    .rejestracjaBox {
+      margin-top: 15%;
+    } 
+}
+
+.btn {
+    font-family: 'Inter', sans-serif;
+    align-content: center;
+    color: #fbfbfb;
+    margin-top: 10px;
+    background-color: #4A5D79;
+    border-radius: 10px;
+    height: 50px;
+    width: 208px;
+    border: none;
+    font-size: 15px;
+}
+
+.btn:hover {
+    color: #fbfbfb;
+    background-color: #1c5185;
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="content">
+            
+            <div class="rejestracjaBox">
+                <p style="color: aliceblue;">Zaloguj się</p>
+               <form action="/authorization/login" method = "POST">
+                    <div class="form-group">
+                        <br>
+                        <label for="mail">E-Mail</label><br>
+                        <input type="text" class="form-control" id="mail" name="mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Hasło</label><br>
+                        <input type="password" class="form-control" id="password" name="password" required minlength="4" maxlength="32">
+                    </div>
+                    <button type="submit" id="btn-register" class="btn">Zaloguj</button>
+                    <a href="/register" class="restart">Nie mam konta</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instrukcja</title>
+    <link rel="stylesheet" href="ranking.css" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="header" id="title">Milionerzy</div>
+        <nav id="navbar">
+            <ul id="menu">
+                <li><a href="/instruction", style="margin-left: 19%; color: black; text-align: center">Instrukcja</a></li>
+                <li><a href="/game", style="margin-left: 19%; color: black; text-align: center">Gra</a></li>
+                <li><a href="/ranking", style="margin-left: 19%; color: black; text-align: center">Ranking</a></li>
+
+            </ul>
+        </nav>
+        <h1 style="text-align: center; width: 203%;">Ranking użytkowników</h1>
+        <br>
+        <table id="tabela">
+            <tr class="Legenda">                  
+                <th class="legend">Nazwa użytkownika</th>
+                <th class="legend">Wynik</th>
+            </tr>
+            <%
+            if(data.length!=0){
+            var i=1;
+            data.forEach(function(row){
+            %>
+            <tr>
+                <th><%=row.login %></th>
+                <th><%=row.najlepszy_wynik %></th>
+            </tr>
+            <%  i++; }) %>
+            <% } else{ %>
+                <div colspan="7" class="emptyTable">Aktualnie nie posiadasz żadnych biletów</div>
+                <tr>
+                </tr>
+            <% } %>
+        </table>
+    </div>
+</body>
+</html>

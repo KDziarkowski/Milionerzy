@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instrukcja</title>
+    <link rel="stylesheet" href="instruction.css" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+    background-color: white;
+    box-sizing: border-box;
+    font-family: Candara;
+}
+.container{
+    background-color: #23395d;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(80px, auto);
+    color: beige;
+
+}
+nav{
+    grid-column: 1/3;
+    padding: 20px 0px;
+    text-align: center;
+}
+nav ul{
+    background-color: #ACADA8;
+    width: 97%;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 10%;
+
+}
+nav.sticky{
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.header{
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1/3;
+}
+
+.img{
+    margin-right: auto;
+    margin-left: auto;
+}
+#title{
+    font-size: 70px;
+    grid-column: 1/3;
+}
+.tekst{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: auto;
+    border: 8px solid #052535;
+    border-radius: 20px;
+}
+@media all and (max-width:850px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .img, .header, .tekst, #navi{
+        grid-column: 1/2;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header" id="title">Milionerzy</div>
+        <nav id="navbar">
+            <ul id="menu">
+                <li><a href="/instruction", style="margin-left: 19%; color: black; text-align: center">Instrukcja</a></li>
+                <li><a href="/game", style="margin-left: 19%; color: black; text-align: center">Gra</a></li>
+                <li><a href="/ranking", style="margin-left: 19%; color: black; text-align: center">Ranking</a></li>
+
+            </ul>
+        </nav>
+        <div class="header" id="2">Jak grac</div>
+        <div class="img" id="gra">
+            <img src="src/Urbański.jpg" width="408" height="240">
+        </div>
+        <div class="tekst" id="opis_gry">
+            Gracze odpowiadają na pytania z zakresu wiedzy ogólnej, obejmującej przede wszystkim takie tematy,
+            jak: historia, sztuka, teologia, polityka, ekonomia, matematyka, język, podróże, sport, rozrywka, żywność oraz gry
+            i zabawy (w porównaniu z rokiem 2000, w latach 2017–2019 zadawano przeciętnie mniej pytań z zakresu historii, ekonomii,
+            sportu i podróży, lecz więcej pytań dotyczących polityki i społeczeństwa, rozrywki, jedzenia oraz języka polskiego).
+            Pytania odnoszące się do wiedzy akademickiej występują mniej więcej z taką samą częstością, co pytania sprawdzające tzw.
+            wiedzę codzienną.
+        </div>
+        <div class="header" id="1">Kola ratunkowe</div>
+        <div class="tekst" >
+            To koło ratunkowe polega na odrzucenie dwóch z trzech błędnych odpowiedzi. Rekomendowane jest w sytuacjach kiedy
+            gracz wacha się pomiędzy dwoma odpowiedziami. Szansa że jedna z pośród nich odpadni wynosi 66%.
+
+        </div>
+
+        <div class="img" id="50-50">
+            <img src="src/50-50.png" width="408" height="240">
+        </div>
+
+        <div class="img" id="publicznosc_pytanie">
+            <img src="src/publicznosc.png" width="408" height="240">
+        </div>
+        <div class="tekst" id="publicznosc">
+            Podczas prawnidzej gry gdy gracz wybierze to koło ratunkowe 100 osoób siedzące na widowni głosuje która
+            z możliwych odpowiedzi jest według nich prawidłowa. W grze nie ma możliwości zapytania się ludzi zatem musimy
+            to w jakiś sposób zasymulować. Publiczność zastępuje algorytm który symuluje wybór tak jakby poprawną odpowedź wskazało
+            między x% a y% ludzi. Na błedne odpowiedzi będzie głosował losowy procent wirtualnej publiczności przy czym suma
+            wszystkich głosów będzie równa 100. W prawdziwej grze im dalsze pytania tym trudniejsze, zatem w grze im większy
+            numer pytania tym statystycznie mniejszy procent wirtualnej publiczności będzie wskazywał właściwą odpowiedź.
+        </div>
+        <div class="tekst">
+            Telefon do przyjaciela w prawdziwej grze polega na zadzwonienu do wcześniej wybranej osoby przedstawnienie jej pytania
+            i wysłuchania odpowiedzi.
+        </div>
+        <div class="img" id="telefon_przyjaciel">
+            <img src="src/telefon-do-przyjaciela.png" width="408" height="240">
+        </div>
+
+        <div class="header" id="3">Historia</div>
+        <div class="img" id="2-2">
+            <img src="src/2+2.jpg" width="405" height="240">
+        </div>
+        <div class="tekst">
+            Polski teleturniej prowadzony przez Huberta Urbańskiego i emitowany na antenie TVN od 3 września 1999 do 26 stycznia 2003
+            , od 19 stycznia 2008 do 19 grudnia 2010 oraz ponownie od 9 lutego 2017, oparty na brytyjskim formacie
+            Who Wants to Be a Millionaire?, emitowanym na antenie ITV.
+            Główną nagrodą w programie jest 1 milion złotych. Zdobyto ją pięciokrotnie – w 662. odcinku z 28 marca 2010 roku
+            (Krzysztof Wójcik), w 823. odcinku z 21 marca 2018 roku (Maria Romanek), w 927. odcinku z 14 marca 2019 roku
+            (Katarzyna Kant-Wysocka), w odcinku 1158. z 23 września 2021 roku (Jacek Iwaszko) i w odcinku 1254. z 19 września 2022 roku
+            (Tomasz Orzechowski). Teleturniej zajął drugie miejsce w plebiscycie Telekamery 2010, uzyskując 142 925 głosów.
+            20 marca 2020 Grupa TVN podjęła decyzję o zawieszeniu emisji programu z końcem marca na czas nieokreślony z powodu
+            rozprzestrzeniania się koronawirusa w Polsce i wprowadzonego stanu zagrożenia epidemiologicznego. Teleturniej powrócił
+            jesienią tego samego roku.
+        </div>
+
+    </div>
+    <script src="milionerzy.js"></script>
+</body>
+</html>

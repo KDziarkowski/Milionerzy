@@ -1,0 +1,56 @@
+body{
+    background-color: white;
+    box-sizing: border-box;
+    font-family: Candara;
+}
+.container{
+    background-color: #23395d;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+    min-height: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(80px, auto);
+    color: beige;
+
+}
+#title {
+    background-color: #23395d;
+    font-size: 70px;
+    text-align: center;
+
+}
+#tabela{
+    width: 160%;
+    margin-bottom: 15%;
+}
+nav{
+    grid-column: 1/3;
+    padding: 20px 0px;
+    text-align: center;
+}
+nav ul{
+    background-color: #ACADA8;
+    width: 97%;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 10%;
+
+}
+nav.sticky{
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.header{
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1/3;
+}
+
